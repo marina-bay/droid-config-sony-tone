@@ -1,0 +1,11 @@
+/usr/share/ssu/board-mappings.d/10-h3113.ini
+/usr/share/ssu/board-mappings.d/10-h3213.ini
+/usr/share/ssu/board-mappings.d/10-h3413.ini
+/usr/share/ssu/board-mappings.d/10-h4213.ini
+/usr/share/ssu/board-mappings.d/10-h4413.ini
+/var/lib/environment/compositor/droid-hal-device-kagura.conf
+/var/lib/environment/compositor/droid-hal-device-keyaki.conf
+/etc/dconf/db/vendor.d/lipstick-configs-kagura.txt
+/etc/dconf/db/vendor.d/lipstick-configs-keyaki.txt
+/etc/dconf/db/vendor.d/silica-configs-kagura.txt
+/etc/dconf/db/vendor.d/silica-configs-keyaki.txt

@@ -1,0 +1,28 @@
+Description: Pattern with packages for f8332 configurations
+Name: jolla-configuration-f8332
+Requires:
+- pattern:jolla-hw-adaptation-kagura
+
+- droid-config-f8332-sailfish
+- droid-config-f8332-pulseaudio-settings
+- droid-config-f8332-policy-settings
+- droid-config-f8332-preinit-plugin
+- droid-config-f8332-flashing
+- droid-config-f8332-bluez5
+- droid-hal-version-f8332
+
+- patterns-sailfish-applications
+- patterns-sailfish-ui
+- patterns-sailfish-cellular-apps
+
+- sailfish-content-graphics-z@ICON_RES@
+
+- jolla-settings-networking-multisim
+
+- geoclue-provider-mlsdb
+- csd
+- jolla-settings-system-flashlight
+- mapplauncherd-booster-silica-qt5-media
+
+Summary: Jolla Configuration f8332
+

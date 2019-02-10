@@ -1,0 +1,28 @@
+Description: Pattern with packages for g8232 configurations
+Name: jolla-configuration-g8232
+Requires:
+- pattern:jolla-hw-adaptation-keyaki
+
+- droid-config-g8232-sailfish
+- droid-config-g8232-pulseaudio-settings
+- droid-config-g8232-policy-settings
+- droid-config-g8232-preinit-plugin
+- droid-config-g8232-flashing
+- droid-config-g8232-bluez5
+- droid-hal-version-g8232
+
+- patterns-sailfish-applications
+- patterns-sailfish-ui
+- patterns-sailfish-cellular-apps
+
+- sailfish-content-graphics-z@ICON_RES@
+
+- jolla-settings-networking-multisim
+
+- geoclue-provider-mlsdb
+- csd
+- jolla-settings-system-flashlight
+- mapplauncherd-booster-silica-qt5-media
+
+Summary: Jolla Configuration g8232
+

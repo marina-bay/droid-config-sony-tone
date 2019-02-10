@@ -139,12 +139,9 @@ if [ -z ${SAILFISH_IMAGE_PATH} ]; then
 fi
 
 IMAGES=(
-"boot_a ${SAILFISH_IMAGE_PATH}hybris-boot.img"
-"boot_b ${SAILFISH_IMAGE_PATH}hybris-boot.img"
+"boot ${SAILFISH_IMAGE_PATH}hybris-boot.img"
 "userdata ${SAILFISH_IMAGE_PATH}sailfish.img001"
-"system_b ${SAILFISH_IMAGE_PATH}fimage.img001"
-"vendor_a ${SAILFISH_IMAGE_PATH}vendor.img001"
-"vendor_b ${SAILFISH_IMAGE_PATH}vendor.img001"
+"system ${SAILFISH_IMAGE_PATH}fimage.img001"
 )
 
 if [ "$UNAME" = "Darwin" ]; then
@@ -182,7 +179,7 @@ if [ -z ${BLOB_BIN_PATH} ]; then
 fi
 
 BLOBS=""
-for b in $(ls -1 ${BLOB_BIN_PATH}/*_nile.img 2>/dev/null); do
+for b in $(ls -1 ${BLOB_BIN_PATH}/*_tone.img 2>/dev/null); do
   if [ -n "$BLOBS" ]; then
    echo; echo "More than one Sony Vendor image was found. Please remove any additional files."
    echo
@@ -194,7 +191,7 @@ done
 if [ -z $BLOBS ]; then
   echo; echo The Sony Vendor partition image was not found in the current directory. Please
   echo download it from
-  echo https://developer.sony.com/file/download/software-binaries-for-aosp-oreo-android-8-1-kernel-4-4-nile/
+  echo https://developer.sony.com/file/download/software-binaries-for-aosp-oreo-android-8-1-kernel-4-4-tone/
   echo and unzip it into this directory.
   echo
   exit 1
@@ -208,7 +205,7 @@ for IMAGE in "${IMAGES[@]}"; do
 done
 
 echo "Flashing oem partition.."
-$FLASHCMD oem_a $BLOBS
+$FLASHCMD oem $BLOBS
 
 echo
 echo "Flashing completed."

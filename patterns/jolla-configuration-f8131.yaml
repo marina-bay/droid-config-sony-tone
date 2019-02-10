@@ -1,0 +1,26 @@
+Description: Pattern with packages for f8313 configurations
+Name: jolla-configuration-f8313
+Requires:
+- pattern:jolla-hw-adaptation-dora
+
+- droid-config-f8313-sailfish
+- droid-config-f8313-pulseaudio-settings
+- droid-config-f8313-policy-settings
+- droid-config-f8313-preinit-plugin
+- droid-config-f8313-flashing
+- droid-config-f8313-bluez5
+- droid-hal-version-f8313
+
+- patterns-sailfish-applications
+- patterns-sailfish-ui
+- patterns-sailfish-cellular-apps
+
+- sailfish-content-graphics-z@ICON_RES@
+
+- geoclue-provider-mlsdb
+- csd
+- jolla-settings-system-flashlight
+- mapplauncherd-booster-silica-qt5-media
+
+Summary: Jolla Configuration f8313
+

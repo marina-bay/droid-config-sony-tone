@@ -1,0 +1,25 @@
+Description: Pattern with packages for f8331 configurations
+Name: jolla-configuration-f8331
+Requires:
+- pattern:jolla-hw-adaptation-kagura
+
+- droid-config-f8331-sailfish
+- droid-config-f8331-pulseaudio-settings
+- droid-config-f8331-policy-settings
+- droid-config-f8331-preinit-plugin
+- droid-config-f8331-flashing
+- droid-config-f8331-bluez5
+- droid-hal-version-f8331
+
+- patterns-sailfish-applications
+- patterns-sailfish-ui
+- patterns-sailfish-cellular-apps
+
+- sailfish-content-graphics-z@ICON_RES@
+
+- geoclue-provider-mlsdb
+- csd
+- jolla-settings-system-flashlight
+- mapplauncherd-booster-silica-qt5-media
+
+Summary: Jolla Configuration f8331

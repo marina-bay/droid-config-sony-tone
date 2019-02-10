@@ -6,7 +6,7 @@
 set tmpflashfile=tmpfile.txt
 set emmawebsite=https://developer.sony.com/develop/open-devices/get-started/flash-tool/download-flash-tool/
 set unlockwebsite=https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader/
-set oemblobwebsite=https://developer.sony.com/file/download/software-binaries-for-aosp-oreo-android-8-1-kernel-4-4-nile/
+set oemblobwebsite=https://developer.sony.com/file/download/software-binaries-for-aosp-oreo-android-8-1-kernel-4-4-tone/
 set fastbootkillretval=0
 set serialnumbers=
 
@@ -111,7 +111,7 @@ del %tmpflashfile% >NUL 2>NUL
 setlocal EnableDelayedExpansion
 
 :: Find the blob image. Make sure there's only one.
-for /r %%f in (*_nile.img) do (
+for /r %%f in (*_tone.img) do (
 if not defined blobfilename (
 :: Take only the filename and strip out the path which otherwise is there.
 :: This is to make sure that we do not face issues later with e.g. spaces in the path etc.
@@ -119,7 +119,7 @@ set blobfilename=%%~nxf
 ) else (
 echo(
 echo More than one Sony Vendor image was found in this directory.
-echo Please remove any additional files ^(*_nile.img^).
+echo Please remove any additional files ^(*_tone.img^).
 echo(
 exit /b 1
 )
@@ -146,13 +146,10 @@ exit /b 1
 :: happens when flashing is done.
 @echo on
 
-@call :fastboot flash boot_a hybris-boot.img
-@call :fastboot flash boot_b hybris-boot.img
-@call :fastboot flash system_b fimage.img001
+@call :fastboot flash boot hybris-boot.img
+@call :fastboot flash system fimage.img001
 @call :fastboot flash userdata sailfish.img001
-@call :fastboot flash vendor_a vendor.img001
-@call :fastboot flash vendor_b vendor.img001
-@call :fastboot flash oem_a %blobfilename%
+@call :fastboot flash oem %blobfilename%
 
 :: NOTE: Do not reboot here as the battery might not be in the device
 :: and in such situation we should not reboot the device.
