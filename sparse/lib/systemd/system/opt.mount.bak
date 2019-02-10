@@ -1,8 +1,14 @@
+# TODO: Investigate commandeering a partition on tone
+# Leave this disabled for now
+
 [Unit]
 Description=Mount for /opt
 Before=local-fs.target systemd-modules-load.service
 
 [Mount]
+# from device-info:
+# PART_71 = vendor_b
+# PART_REAL_71="mmcblk0p71"
 What=/dev/mmcblk0p71
 Where=/opt
 Type=ext4
