@@ -1,12 +1,14 @@
-CPUCHECK_STRING="Qualcomm Technologies, Inc SDM630"
+CPUCHECK_STRING="Qualcomm Technologies, Inc MSM8996"
 
 # Because of flash-partition checks 1 needs to be defined
 # Others can go with parition numbers
+# TODO FIXME!!!
 #PART_1="boot_a"
 #PART_39="boot_b"
 #PART_70="vendor_a"
 #PART_71="vendor_b"
 
+# PART_REAL_1 should match "boot" partition
 #PART_REAL_1="mmcblk0p38"
 #PART_REAL_39="mmcblk0p39"
 #PART_REAL_70="mmcblk0p70"
