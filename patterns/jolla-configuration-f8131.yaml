@@ -1,15 +1,15 @@
-Description: Pattern with packages for f8313 configurations
-Name: jolla-configuration-f8313
+Description: Pattern with packages for f8131 configurations
+Name: jolla-configuration-f8131
 Requires:
 - pattern:jolla-hw-adaptation-dora
 
-- droid-config-f8313-sailfish
-- droid-config-f8313-pulseaudio-settings
-- droid-config-f8313-policy-settings
-- droid-config-f8313-preinit-plugin
-- droid-config-f8313-flashing
-- droid-config-f8313-bluez5
-- droid-hal-version-f8313
+- droid-config-f8131-sailfish
+- droid-config-f8131-pulseaudio-settings
+- droid-config-f8131-policy-settings
+- droid-config-f8131-preinit-plugin
+- droid-config-f8131-flashing
+- droid-config-f8131-bluez5
+- droid-hal-version-f8131
 
 - patterns-sailfish-applications
 - patterns-sailfish-ui
@@ -22,5 +22,5 @@ Requires:
 - jolla-settings-system-flashlight
 - mapplauncherd-booster-silica-qt5-media
 
-Summary: Jolla Configuration f8313
+Summary: Jolla Configuration f8131
 
