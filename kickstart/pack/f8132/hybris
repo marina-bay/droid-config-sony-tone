@@ -152,6 +152,7 @@ FILES="flash* *.img* *.exe *.dll *-release"
 FILES_TO_COPY="*.urls"
 
 # Set supported devices in flash scripts
+# TODO: This makes no sense... also, no windows for now, so leave it as is
 if [ "@DEVICEMODEL@" = "h3113" ]; then
   sed -e "s/\@DEVICES\@/\-e \"H3113\" -e \"H3123\" -e \"H3133\"/g" -i flash.sh
   sed -e "s/\@DEVICES\@/:: H3113\r\n:: H3123\r\n:: H3133/g" -i flash-on-windows.bat
