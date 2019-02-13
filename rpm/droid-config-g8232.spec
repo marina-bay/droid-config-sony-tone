@@ -35,7 +35,7 @@ Conflicts: apkd < 8.1.0
 # Community builds may use the system partition
 %if 0%{?_obs_build_project:1}
 Requires: droid-system-keyaki-%{rpm_device}
-Requires: droid-system-vendor-keyaki-%{rpm_device}
+#Requires: droid-system-vendor-keyaki-%{rpm_device}
 %endif
 
 %define ofono_enable_plugins bluez5,hfp_ag_bluez5
