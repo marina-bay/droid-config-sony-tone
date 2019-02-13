@@ -9,7 +9,7 @@
 
 # Define this to pull in https://github.com/mer-hybris/community-adaptation.git
 # for build_packages.sh
-%define community_adaptation
+%define community_adaptation 1
 
 # Sailfish OS is considered to-scale, if in app grid you get 4-in-a-row icons
 # and 2x2 or 3x3 covers when up-to-4 or 5-or-more apps are open respectively.
