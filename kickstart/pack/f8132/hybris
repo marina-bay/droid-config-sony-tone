@@ -22,11 +22,11 @@ RELEASENAME=${NAME// /_}-${SAILFISH_CUSTOMER// /_}${SAILFISH_CUSTOMER:+-}${EXTRA
 
 # Remove /opt mounting from fstab, systemd will handle it
 # TODO: Not needed on tone as we have no fake /vendor partition to spare
-mkdir root
-mount -o loop root.img root
-sed -i '/\/opt/d' root/etc/fstab
-umount root
-rm -rf root
+#mkdir root
+#mount -o loop root.img root
+#sed -i '/\/opt/d' root/etc/fstab
+#umount root
+#rm -rf root
 
 IMGSECTORS=0
 IMGBLOCKS=0
