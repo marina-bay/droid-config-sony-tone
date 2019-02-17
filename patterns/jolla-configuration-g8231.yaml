@@ -17,12 +17,10 @@ Requires:
 
 - sailfish-content-graphics-z@ICON_RES@
 
-- jolla-settings-networking-multisim
-
-- geoclue-provider-mlsdb
-- csd
 - jolla-settings-system-flashlight
+
+# Devices with 2G or more memory should also include this booster
+# to improve camera startup times and the like
 - mapplauncherd-booster-silica-qt5-media
 
 Summary: Jolla Configuration g8231
-
