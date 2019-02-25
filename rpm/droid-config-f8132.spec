@@ -33,13 +33,10 @@ Obsoletes: qt5-qpa-surfaceflinger-plugin
 Conflicts: apkd < 8.1.0
 
 # Community builds may use the system partition
-# TODO: Define this for community builds as well!
-# Explanation: vendor is not the physical parition, but rather just another
-# folder in the root.img lvm. So require system-vendor-<device> as well!
-# if 0%{?_obs_build_project:1}
+%if 0%{?_obs_build_project:1}
 Requires: droid-system-dora-%{rpm_device}
 Requires: droid-system-vendor-dora-%{rpm_device}
-# endif
+%endif
 
 %define ofono_enable_plugins bluez5,hfp_ag_bluez5
 %define ofono_disable_plugins bluez4,dun_gw_bluez4,hfp_ag_bluez4,hfp_bluez4,dun_gw_bluez5,hfp_bluez5
