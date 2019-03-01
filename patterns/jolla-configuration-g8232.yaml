@@ -11,4 +11,7 @@ Requires:
 - droid-config-g8232-bluez5
 - droid-hal-version-g8232
 
+# For multi-SIM devices
+- jolla-settings-networking-multisim
+
 Summary: Jolla Configuration g8232

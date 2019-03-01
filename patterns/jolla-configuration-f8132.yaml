@@ -11,4 +11,7 @@ Requires:
 - droid-config-f8132-bluez5
 - droid-hal-version-f8132
 
+# For multi-SIM devices
+- jolla-settings-networking-multisim
+
 Summary: Jolla Configuration f8132
