@@ -2,10 +2,6 @@
 
 %define vendor_pretty Sony
 
-# Define this to pull in https://github.com/mer-hybris/community-adaptation.git
-# for build_packages.sh
-%define community_adaptation 1
-
 %define provides_own_board_mapping 1
 %define out_of_image_files 1
 
